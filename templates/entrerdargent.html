@@ -1,0 +1,24 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gestion des personnes</title>
+    <link rel="stylesheet" href="{% static 'projetbudget/css/bootstrap.css' %}">
+</head>
+<body>
+
+    <h2 class="text-danger">entrer le montant</h2>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {{forms.as_p}}
+        <button type="submit">Enregistrer</button>
+    </form>
+
+    <script  src="{% static 'projetbudget/js/bootstrap.js' %}"></script> 
+    <script  src="{% static 'projetbudget/js/jquery.js' %}"></script>
+
+</body>
+</html>
